@@ -1,0 +1,17 @@
+task :default => [:compile, :run]
+
+verbose(true)
+
+task :compile do
+  cmd = "jrubyc main.rb"
+  puts "compiling..."
+  puts cmd
+  puts %x{#{cmd}}
+end
+
+task :run do
+  cmd = "jruby main.class"
+  puts "running..."
+  puts cmd
+  puts %x{#{cmd}}
+end
