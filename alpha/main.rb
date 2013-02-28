@@ -6,7 +6,7 @@ import java.awt.Dimension
 
 class Main
   def initialize
-    label = JLabel.new("Hello", SwingConstants::CENTER)
+    label = JLabel.new("Hello World!", SwingConstants::CENTER)
     label.setPreferredSize(Dimension.new(300, 100))
     frame = JFrame.new("Demo")
     frame.setDefaultCloseOperation(JFrame::EXIT_ON_CLOSE)
